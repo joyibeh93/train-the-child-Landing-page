@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500;1,600&family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>NGO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #edf2ef;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        header{
+            background-color: #57c4e5;
+            box-shadow: 0 0 10px;
+            width: 100vw;
+            z-index: 10;
+        }
+
+        nav{
+            display: flex;
+            justify-content:space-between;
+            text-align: center;
+            padding: 15px 30px;
+            
+        }
+        .nav-logo{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            border: 1px solid #212738;
+        }
+        .nav-link li{
+            display: inline-block;
+            margin: 0 30px;
+        }
+        .nav-link li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+            font-family:'Roboto', sans-serif;
+        }
+        .nav-link li a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 5px;
+        }
+        .hero-session{
+            display: flex;
+            /* justify-content: space-between; */
+            margin:10px 30px;
+        }
+        .hero-session-content{
+            margin: 160px 70px;
+        }
+        .hero-session-content h1{
+            font-size: 50px;
+            font-weight: 400;
+        }
+        .hero-session-content p{
+            width: 500px;
+            font-size: 16px;
+            line-height: 2em;
+            /* text-align: center; */
+            margin-top: 35px;
+        }
+        .btn-nav{
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #f97068;
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 600;
+
+        }
+        .hero-session-img{
+            display: flex;
+            max-width: 700px;
+            justify-content: space-around;
+            margin-top:40px;
+        }
+        .child-in-uniform{
+            width: 300px;
+            display: inline-block;
+            margin: 60px 10px;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+        .children{
+            width: 400px;
+            display: inline-block;
+            margin: 20px 30px;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+        .about-us{
+            background-color: #fff;
+            padding: 50px;
+        }
+        .about-us-cnt{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 15px;
+
+        }
+        .abt-img1{
+            width: 600px;
+        }
+        .about-us-cnt,content{
+            /* width: 500px; */
+            margin-left: 30px;
+            line-height: 2em;
+            font-size: 18px;
+
+        }
+        .about-us2{
+            
+            background-color:#edf2ef;
+        }
+        h2{
+            font-size: 40px;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo.jpg" alt="logo" class="nav-logo">
+            <ul class="nav-link">
+                 <li> <a href="#">Home</a> </li>
+                <li>
+                     <a href="#">About us</a>
+                </li>
+                <li>
+                     <a href="#">Support Us</a>
+                </li>
+                <li>
+                     <a href="#">Event</a>
+                </li>
+    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-session">
+            <div class="hero-session-content">
+                <h1> Help Train a Child</h1>
+                <p>It is widely accepted that most of Africa’s education and training programs suffer from low-quality teaching and learning, as well as inequalities and exclusion at all levels. Even with a substantial increase in the number of children with access to basic education, a large number still remain out of school.</p>
+                <button class="btn-nav">Support Us Today</button>
+            </div>
+            <div class="hero-session-img">
+                <div>
+                    <img src="./images/nav-img1.jpg" alt="child-in-uniform" class="child-in-uniform">
+                </div>
+                <div>
+                    <p> <img src="./images/nav-img3.jpg" alt="children" class="children"> </p>
+                    <p> <img src="./images/nav-img2.jpg" alt="children" class="children"></p>
+                </div>
+            </div>
+
+        </section>
+        <section class="about-us">
+            <h2>ABOUT US</h2>
+            <div class="about-us-cnt">
+                <div class="about-us-img" >
+                    <img src="./images/abt-img.jpg" alt="abt-img1" class="abt-img1">
+                </div>
+                <div class="about-us-cnt">
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed delectus sapiente beatae reprehenderit ab temporibus deserunt perferendis fugiat fugit repellendus cupiditate mollitia alias animi in dolorum, itaque aliquid unde eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum recusandae veritatis officia animi. Dolore iste molestias at maxime ad laudantium, voluptatum deserunt! Temporibus, totam sint nemo ratione repudiandae porro tempore.
+                    </p>
+    
+                </div>
+
+            </div>
+            
+        </section>
+        <section  class="about-us2">
+            <div>
+                <div>
+                    <h2>What We Do</h2>
+                    <p>We Provide Services to the Less Priviledge Sucha as</p>
+                    <p>
+                        <ol>
+                            <li>Distribution of Food and Shelter</li>
+                            <li>Home Schooling and Online Schooling </li>
+                            <li> Coding and Robotics</li>
+                            <li> Web Development</li>
+                            <li>Data Science and Analytics</li>
+                            <li>UI/UX</li>
+                        </ol>
+                    </p>
+                </div>
+                <div class="corousel-container">
+                    Do carousel image here tomorrow
+                </div>
+            </div>
+        </section>
+        <section class="support-session">
+            <div class="">
+                
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
