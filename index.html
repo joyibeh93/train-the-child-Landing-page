@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d825fc213e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500;1,600&family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>NGO</title>
     <style>
@@ -13,14 +14,14 @@
             box-sizing: border-box;
         }
         body{
-            background-color: #edf2ef;
+            
             font-family: 'Poppins', sans-serif;
             font-family: 'Roboto', sans-serif;
         }
         header{
             background-color: #57c4e5;
             box-shadow: 0 0 10px;
-            width: 100vw;
+            /* width: 100vw; */
             /* z-index: 10; */
         }
 
@@ -28,7 +29,7 @@
             display: flex;
             justify-content:space-between;
             text-align: center;
-            padding: 15px 30px;    
+            padding: 0.9375rem 1.875rem;    
         }
         .nav-logo{
             width: 120px;
@@ -76,13 +77,20 @@
             background-color: #57c4e5;
             color: #fff;
         }
+        /*------------------------------------------------------------------------------------------------ 
+        ------STYLING THE HERO SESSION
+        --------------------------------------------------------------------------------------- */
         .hero-session{
+            background-color: #edf2ef; 
+        }
+        .hero-session1{
             display: flex;
-            /* justify-content: space-between; */
-            margin:10px 30px;
+            margin: 10px 50px;
+
+                   
         }
         .hero-session-content{
-            margin: 160px 70px;
+            padding: 80px 40px;
         }
         .hero-session-content h1{
             font-size: 50px;
@@ -90,40 +98,66 @@
         }
         .hero-session-content p{
             width: 500px;
-            font-size: 16px;
+            font-size: 20px;
             line-height: 2em;
             /* text-align: center; */
             margin-top: 35px;
         }
-        .btn-nav{
-            display: inline-block;
+       .nav-link{
+        text-decoration: none;
+       }
+        .btn-nav {
+            display: block;
             margin-top: 30px;
             padding: 12px 20px;
-            border-radius: 10px;
+            overflow: hidden;
             border: none;
-            background-color: #f97068;
             color: #fff;
             font-size: 25px;
             text-transform: uppercase;
             font-weight: 600;
-
+            transition: 1ms all ease;
+            background-color: #f97068;
+            text-decoration: none;
+            border-radius: 10px;
         }
+        .btn-nav:hover{
+            /* color: #f97068; */
+           background-color: #212738;;
+           color: #f97068;
+            transition: all 0.5s ease;
+        }
+        /* .btn-nav::before{
+           width: 0;
+           height: 100%;
+           color: #f97068;
+        }
+        .btn-nav:hover::before{
+           width:100%;
+           
+        } */
+
+       
         .hero-session-img{
             display: flex;
-            max-width: 700px;
+            /* width: 700px; */
             justify-content: space-around;
             margin-top:40px;
+          
         }
         .child-in-uniform{
             width: 300px;
-            display: inline-block;
+        }
+        .child-in-uniform1{
+            width: 100%;
+            /* display: inline-block; */
             margin: 60px 10px;
             border-bottom-left-radius: 50px;
             border-top-left-radius: 50px;
         }
+
         .children{
             width: 400px;
-            display: inline-block;
             margin: 20px 30px;
             border-bottom-right-radius: 50px;
             border-top-left-radius: 50px;
@@ -134,6 +168,7 @@
         }
         .about-us-cnt{
             display: flex;
+            /* flex-wrap: wrap; */
             justify-content: space-around;
             /* align-items: center; */
             margin: 25px 20px;
@@ -165,7 +200,7 @@
             font-family: 'Poppins', sans-serif;
         }
         .our-doings, .carousel-image-slide{
-            margin-top: 80px;
+            margin: 80px 0 60px 0;
         }
         .services-offered{
             margin-bottom: 10px;
@@ -196,37 +231,7 @@
             margin: 0 auto;
 
         }
-        .navigation .prev{
-            position: absolute;
-            z-index: 10;
-            font-size: 25px;
-            top: 260%;
-            left: 60%;
-            font-weight: 700;
-        }
-        .navigation .next{
-            top: 260%;
-            right: 5%;
-            position: absolute;
-            font-size: 25px;
-            font-weight: 700;
-            z-index: 10;
-        }
-        .navigation .nav-btn {
-            background: rgba(255, 255, 255, 0.55);
-            cursor: pointer;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-        }
-        .navigation .nav-btn:hover {
-            background: white;
-        }
+
         .corousel-container{
             /* margin-top: 20px; */
             transition: all 0.3s ease-in;
@@ -247,19 +252,7 @@
         .main {
             display: block;
         }
-        .caption {
-            position: absolute;
-            bottom: 0;
-            top: 5;
-            width: 100%;
-            display: flex;
-            font-size: 20px;
-            justify-content: center;
-            align-items: center;
-            color: rgb(255, 255, 255);
-            background: rgba(0, 0, 0, 0.3);
-            height: 35px;
-        }
+        
         .support-session{
             background-color: #fff;
         padding: 30px;
@@ -276,24 +269,113 @@
         
     .grid-item1{
         background-color:  #edf2ef;
-        width:300px;
+        width:350px;
         margin: 10px auto;
       }
       
       .grid-item1 img{
         width: 100%;
+        transition: transform 100ms ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
       }
-     
+      .grid-item1 img:hover{
+        transform: scale(1.05);
+      }
+      /* STYLING FOOTER */
+      .footer{
+        background-color: #212738;
+        color: #fff;
+        padding: 50px;
+      }
+      .newsletter{
+        font-size: 20px;
+        text-align: center;
+      }
+      .subcribe{
+        margin: 20px auto;
+        width: 600px;
+        
+      }
+      input[type=email]{
+        /* width: 80%; */
+        padding: 14px 90px;
+        font-size: 18px;
+      }
+      .btn-fter{
+        padding: 14px 35px;
+        background-color: #f97068;
+        border: 1px solid #f97068;
+        color: #fff;
+        font-size: 18px;
+      }
+      .footer-cnt{
+        display: flex;
+      
+        justify-content: space-around;
+        margin: 20px 10px;
+      }
+     .footer-cnt, .footer-list{
+        margin-top: 40px;
+      }
+
+      .footer-list li{
+        font-size: 18px;
+        line-height: 2em;
+        list-style: none;
+
+      }
+      .footer-list li:hover{
+        text-decoration: underline;
+      }
+      .footer-links h3{
+        margin-top: 10px;
+      }
+      .footer-list li a{
+        color: #fff;
+        text-decoration: none;
+      }
+     /* CREATING MEDIA QUERIES */
+     @media screen and (max-width:800px) {
+                
+        .hero-session{
+            display: flex;
+           flex-direction: column;
+        }
+        
+        .hero-session-content{
+            margin: 20px auto
+        }
+        .hero-session-content h1{
+            font-size: 40px;
+    
+        }
+        .hero-session-content p{
+            font-size: 20px;
+        }
+        .about-us-cnt{
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+        
+     }
     </style>
 </head>
-<body>
+<body>  
     <header>
         <nav>
             <img src="./images/slum-2-school-m-logo.png" alt="logo" class="nav-logo">
             <ul class="nav-link">
-                 <li> <a href="#">Home</a> </li>
+                 <li> <a href="#Home">Home</a> </li>
                 <li>
-                     <a href="#">About us</a>
+                     <a href="#aboutUs">About us</a>
+                     
+                </li>
+                <li>
+                    <a href="#whatWeDo">What We Do</a>
+               </li>
+               <li>
+                     <a href="#gallery">Gallery</a>
                 </li>
                 <li>
                      <a href="https://slum2school.org/donate" target="_blank">Support Us</a>
@@ -305,28 +387,32 @@
     </header>
     <main>
         <section class="hero-session">
-            <div class="hero-session-content">
-                <h1> SLUM TO SCHOOL</h1>
-                <p> It is widely accepted that most of Africa's education and training programs suffer from low-quality teaching and learning, as well as inequalities and exclusion at all levels. Even with a substantial increase in the number of children with access to basic education, a large number still remain out of school.</p>
-                 <a href="https://slum2school.org/donate" target="_blank"><button class="btn-nav">Support Us Today</button></a>
-                 
-            </div>
-            <div class="hero-session-img">
-                <div>
-                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/466/original/nav-img1.jpg?1672876104" alt="child-in-uniform" class="child-in-uniform">
+            <div class="hero-session1">
+                <div class="hero-session-content">
+                    <h1> SLUM TO SCHOOL</h1>
+                    <p> It is widely accepted that most of Africa's education and training programs suffer from low-quality teaching and learning, as well as inequalities and exclusion at all levels. Even with a substantial increase in the number of children with access to basic education, a large number still remain out of school.</p>
+                     <a href="https://slum2school.org/donate" target="_blank" class="nav-link"><button class="btn-nav">Support Us Today</button></a>
+                     
                 </div>
-                <div>
-                    <p> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/610/original/nav-img3.jpg?1672961945" alt="children" class="children"> </p>
-                    <p> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/612/original/nav-img2.jpg?1672962049" alt="children" class="children"></p>
+                <div class="hero-session-img">
+                    <div class="child-in-uniform">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/466/original/nav-img1.jpg?1672876104" alt="child-in-uniform" class="child-in-uniform1">
+                    </div>
+                    <div>
+                        <p> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/610/original/nav-img3.jpg?1672961945" alt="children" class="children"> </p>
+                        <p> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/612/original/nav-img2.jpg?1672962049" alt="children" class="children"></p>
+                    </div>
                 </div>
+
             </div>
+            
 
         </section>
         <section class="about-us">
-            <h2>ABOUT US</h2>
+            <h2 id="aboutUs">ABOUT US</h2>
             <div class="about-us-cnt">
                 <div class="about-us-img" >
-                    <img src="./images/abt-img.jpg" alt="abt-img1" class="abt-img1">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/687/original/abt-img.jpg?1673048313" alt="abt-img1" class="abt-img1">
                 </div>
                 <div class="about-us-cnt">
                     <p class="content">
@@ -345,7 +431,7 @@
         <section  class="about-us2">
             <div class="about-us-cnt">
                 <div class="our-doings">
-                    <h2>What We Do</h2>
+                    <h2 id="whatWeDo">What We Do</h2>
                     <p class="services-offered">We Provide Services to the Less Priviledge Such as</p>
                     <p>
                         <ol class="ordered-list">
@@ -362,8 +448,8 @@
                 <div class="carousel-image-slide" >
                     <div class="corousel-container" id="carousel">
                         <div class="item main">
-                            <img src="./images/slide1.jpg" alt="happy-child">
-                            <div class="caption">image one</div>
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/689/original/slide1.jpg?1673048435" alt="happy-child">
+                            
                         </div>
 
                     </div>
@@ -373,7 +459,7 @@
         </section>
 
         <section class="support-session">
-            <h2>Image Gallery</h2>
+            <h2 id="gallery">Image Gallery</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <div class="grid-item1">
@@ -391,14 +477,14 @@
                 </div>
                 <div class="grid-item">
                     <div class="grid-item1">
-                        <img src="./images/slide4.jpg" alt="">
+                        <img src="./images/slide9.jpg" alt="">
                         <!-- <p>Web Development Training by </p> <br>
                         <a href="#">SheCode</a> -->
                     </div>
                 </div>
                 <div class="grid-item">
                     <div  class="grid-item1">
-                        <img src="./images/slide3.jpg" alt="">
+                        <img src="./images/slide8.jpg" alt="">
                         <!-- <p>Web Development Training by </p> <br>
                         <a href="#">SheCode</a> -->
                     </div>
@@ -426,7 +512,7 @@
                 </div>
                 <div class="grid-item">
                     <div class="grid-item1">
-                        <img src="./images/nav-img3.jpg" alt="">
+                        <img src="./images/slide7.jpg" alt="">
                         <!-- <p>Web Development Training by </p> <br>
                         <a href="#">SheCode</a> -->
                     </div>
@@ -435,40 +521,52 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
+        <p class="newsletter"> Subscribed to our newsletter</p>
+        <div class="subcribe">
+            <input type="email" placeholder="enter your email address"><button class="btn-fter">Subcribed</button>
+        </div>
+        <div class="footer-cnt">
+
+            <div class="footer-links">
+                <h3>connect with Us </h3>
+                <ul class="footer-list">
+                    <li> <a href="#"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </li>
+                    <li> <a href="#">  <i class="fa-brands fa-square-twitter"></i> Twiiter</a>
+                        </li>
+                    <li> <a href="#"> <i class="fa-brands fa-square-youtube"></i> Youtube</a> </li>
+                </ul>
+
+            </div>
+            <div class="footer-links">
+                <h3>Our services</h3>
+                <ul class="footer-list">
+                    <li>Scholarship</li>
+                    <li>Education</li>
+                    <li>Tech Training</li>
+                    <li>Skill Acquisition</li>
+                </ul>
+
+            </div>
+            <div class="footer-links">
+                <h3>Company</h2>
+                <ul class="footer-list">
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li>  <a href="#whatWeDo"> What we do</a> </li>
+                    <li> <a href="#gallery"> Our Image Gallery</a></li>
+                </ul>
+                
+
+            </div>
+        </div>
+        <p class="newsletter"> &copy;Ibeh Joy Chinwendu@2023</p>
+        
         
     </footer>
     <script>
 
-        // alert("hello joy")
-        const prev = document.querySelector('#prev');
-        const next = document.querySelector('#next');
-        const images = document.querySelector('#carousel').children;
-        const totalImages = images.length;
-        let index = 0;
-
-        prev.addEventListener('click', () => {
-             nextImage('next');
-        })
-
-        next.addEventListener('click', () => {
-            nextImage('prev');
-        })
-
-        function nextImage(direction) {
-            if(direction == 'next') {
-                index++;
-                if(index == totalImages) {
-                    index = 0;
-                }
-            } else {
-                if(index == 0) {
-                    index = totalImages - 1;
-                } else {
-                    index--;
-                }
-            }
-        }
+        
     </script>
     
 </body>
