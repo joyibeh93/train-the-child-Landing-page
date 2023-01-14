@@ -359,39 +359,87 @@
             }
             .grid-container {
                 display: grid;
-                grid-template-columns: 150px 1fr;
+                grid-template-columns: 6.25rem 1fr;
                margin: 1.25rem;
             
             }
             .grid-item1{
-             width:250px;
-             margin: 10px auto;
+             width:15.625rem;
+             margin: 0.625rem auto;
       
         }
+    }
         @media (min-width:200px) and (max-width:599px){
+            nav{
+            display: flex;
+            flex-direction: column;
+            /* justify-content:space-between;
+            text-align: center;
+            padding: 0.9375rem 1.875rem;     */
+        }
             .nav-logo{
-                width: 70px;
-                height: 40px;
+                display: block;
+                width: 4.375rem;
+                height: 2.5rem;
+                margin: 0 auto;
             }
             
             .nav-link li a {
-                
-                font-size: 14px;
+
+                font-size: 0.875rem;
                 font-weight: 600;
-                margin: 8px 5px;
+                margin: 0.5rem 0.3125rem;
             }
             
             .learn-more {
-                padding: 5px;
-                font-size: 14px;
-                margin-right: 5px;
+                padding: 10px 15px;
+                font-size: 16px;
+                margin: 10px auto;
+                border-radius: 2px;
             }
            .hero-session1 {
             display: flex;
             flex-direction: column;
            } 
+           .hero-session-content h1 {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .hero-session-content {
+                width: 21.25rem;
+                /* padding-right: 1.25rem; */
+            }
+            .hero-session-img {
+            margin-top: 0.75rem;
+        }
+            .hero-session-content p {
+                font-size: 1rem;
+                text-align: center;
+            }
+            .btn-nav {
+            display: block;
+            margin:10px auto;
+            font-size: 1.5rem;
+        }
+        .child-in-uniform1 {
+            display: none;
+        }
+        .children {
+            width: 15rem;
+            display: none;
+        }
+        .abt-img1 {
+            width: 23.75rem;
+        }
+        .item img {
+            display: block;
+            width: 60%;
+            border: 2px solid #fff;
+            border-radius: 0;
+            margin: 0 auto;
+        }
            .hero-session-img{
-            margin-top: 15px;
+            margin-top: 0.9375rem;
            }
            .about-us-cnt, .our-doings2 {
             display: flex;
@@ -399,15 +447,38 @@
             }
             .grid-container {
                 display: grid;
-                grid-template-columns: 1fr;
-               margin: 20px;
+                grid-template-columns:1fr;
+               /* margin: 2x; */
             
             }
             .grid-item1{
-            background-color:  #edf2ef;
-            width:150px;
+            width:250px;
       
         }
+        .subcribe {
+        margin: 1.5rem auto;
+        width: 20rem;
+    }
+        input[type=email] {
+        /* width: 80%; */
+        padding: 0.75rem 0.25rem;
+        font-size: 1.5rem;
+        }
+        .btn-fter {
+        padding: 1rem 2.1875rem;
+        font-size: 1.5rem;
+        display: block;
+        margin: 20px auto;
+    }
+    .footer-cnt{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 1.25rem 0.625rem;
+            text-align: center;
+        }
+
+    }
         
     </style>
 </head>
@@ -438,7 +509,7 @@
     <main>
         <section class="hero-session">
             <div class="hero-session1">
-                <div class="hero-session-content">
+                <div class="hero-session-content" id="Home">
                     <h1> SLUM TO SCHOOL</h1>
                     <p> 
                         Slum2School is a volunteer-driven development organization transforming 
@@ -466,7 +537,7 @@
 
         </section>
         <section class="about-us">
-            <h2>ABOUT US</h2>
+            <h2 id="aboutUs">ABOUT US</h2>
             <div class="about-us-cnt">
                 <div class="about-us-img" >
                     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/687/original/abt-img.jpg?1673048313" alt="abt-img1" class="abt-img1">
@@ -539,14 +610,12 @@
                 </div>
                 <div class="grid-item">
                     <div  class="grid-item1">
-                        <img src="
-                        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/610/original/nav-img3.jpg?1672961945" alt="happy-child">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/610/original/nav-img3.jpg?1672961945" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="grid-item1">
-                        <img src="
-                        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/692/original/slide4.jpg?1673048497" alt="happy-child">
+                        <img src=" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/692/original/slide4.jpg?1673048497" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
@@ -606,10 +675,6 @@
         
         
     </footer>
-    <script>
-
-        
-    </script>
     
 </body>
 </html>
