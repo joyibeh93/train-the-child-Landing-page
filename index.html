@@ -86,22 +86,23 @@
         }
         .hero-session1{
             display: flex;
-            margin: 10px 50px;
-
-                   
+            justify-content: center;
+            align-items: center;
+            padding: 15px;         
         }
         .hero-session-content{
-            padding: 80px 40px;
+            width: 500px;
+            padding-right:20px;
         }
         .hero-session-content h1{
             font-size: 50px;
             font-weight: 400;
         }
         .hero-session-content p{
-            width: 500px;
+            text-align: justify;
             font-size: 20px;
             line-height: 2em;
-            text-align: justify;
+            /* text-align: center; */
             margin-top: 35px;
         }
        .nav-link{
@@ -141,9 +142,8 @@
        
         .hero-session-img{
             display: flex;
-            /* width: 700px; */
-            justify-content: space-around;
-            margin-top:40px;
+            margin-left: 40px;
+        
           
         }
         .child-in-uniform{
@@ -159,55 +159,53 @@
 
         .children{
             width: 400px;
-            margin: 20px 30px;
+            margin: 10px 30px;
             border-bottom-right-radius: 50px;
             border-top-left-radius: 50px;
         }
+        /*--------------------------------------------------------------
+        --------------------- STYLING THE ABOUT US SESSION--------------
+        ---------------------------------------------------------------- */
         .about-us{
             background-color: #fff;
             padding: 50px;
         }
-        .about-us-cnt{
+        .about-us-cnt,.our-doings2{
             display: flex;
-            /* flex-wrap: wrap; */
-            justify-content: space-around;
-            /* align-items: center; */
-            padding: 25px 20px;
+            justify-content: center;
+            align-items: center;
+
         }
-        .about-us-cnt1{
-            padding-top: 25px;
-        }
+       
         .abt-img1{
-            width: 600px;
-            margin-top: 35px;
+            width: 700px;
+            padding: 35px 15px;
         }
         .content{
-            margin-top: 5px;
-            line-height: 2em;
+            line-height: 2.5rem;
             font-size: 20px;
             text-align: justify;
-            display: block;
         }
-        .about-us-cnt1,content{
-            padding-left: 30px;
+        .connect{
+            font-size: 22px;
+            line-height: 1.5rem;
            
         }
+    
         .about-us2{
-            
-            background-color:#edf2ef;
+            background-color:#d0dbd5;
+            padding: 50px;
         }
+       
         h2{
             font-size: 40px;
             text-align: center;
             padding: 10px;
             font-family: 'Poppins', sans-serif;
         }
-        .our-doings, .carousel-image-slide{
-            margin: 80px 0 60px 0;
-        }
         .services-offered{
             margin-bottom: 10px;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 600;
             font-family: 'Poppins', sans-serif;
         }
@@ -218,49 +216,33 @@
             font-size: 25px;
             font-family: 'Poppins', sans-serif;
             transition: 200ms ease-in;
-           
+          
         }
-        .ordered-list li:hover{
+        .ordered-list li a{
+            text-decoration: none;
+
+        }
+        .ordered-list li a:hover{
             font-weight: 600; 
             font-size: 30px;
         }
-        .carousel-image-slide{
+        .our-doings2{
+            justify-content: space-around;
+        }
+        .our-doings-img{
             width: 600px;
-        }
-        .corousel-container{
-            width: 100%;
-            height:400px;
-            position: relative;
-            margin: 0 auto;
 
         }
-
-        .corousel-container{
-            /* margin-top: 20px; */
-            transition: all 0.3s ease-in;
-            
-        }
-        .corousel-container img {
+        .item img{
             width: 100%;
-            transition: all 0.3s ease-in;
             border:8px solid #212738;;
             border-radius: 20px;
+
         }
-        
-        .item {
-            position: absolute;
-            display: none;
-        }
-        
-        .main {
-            display: block;
-        }
-        
-        .support-session{
+        .image-gallery-session{
             background-color: #fff;
-        padding: 30px;
-        
-      }
+            padding: 30px;
+        }
       .grid-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -419,7 +401,7 @@
 
         </section>
         <section class="about-us">
-            <h2 id="aboutUs">ABOUT US</h2>
+            <h2>ABOUT US</h2>
             <div class="about-us-cnt">
                 <div class="about-us-img" >
                     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/687/original/abt-img.jpg?1673048313" alt="abt-img1" class="abt-img1">
@@ -432,102 +414,84 @@
                          create safe learning spaces,use 21st century pedagogy and technology to improve
                           learning outcomes and provide several other health and psychosocial supports for
                          underserved children in slums and hard to reach communities.
-                         <P><strong>CONNECTING THE NIGERIAN CHILD TO PLATFORMS THAT WILL HELP THEM GROW</strong></P> 
-                    </P>
-
+                         <p><strong class="connect">CONNECTING THE NIGERIAN CHILD TO PLATFORMS THAT WILL HELP THEM GROW</strong></p>  
+                    </p>
+                    
+    
                 </div>
 
             </div>
             
         </section>
         <section  class="about-us2">
-            <div class="about-us-cnt">
+            <div class="our-doings2">
                 <div class="our-doings">
                     <h2 id="whatWeDo">What We Do</h2>
                     <p class="services-offered">We Provide Services to the Less Priviledge Such as</p>
                     <p>
                         <ol class="ordered-list">
-                            <li>Distribution of Food and Shelter</li>
-                            <li>Home Schooling and Online Schooling </li>
-                            <li> Coding and Robotics</li>
-                            <li> Web Development</li>
-                            <li>Data Science and Analytics</li>
-                            <li>Coding Workshop</li>
-                            <li>UI/UX</li>
+                            <li> <a href="https://slum2school.org/our-work/" target="_blank"> Home Schooling and Online Schooling</a>
+                               </li>
+                            <li> <a href="https://digitalskillsnigeria.gov.ng/signup/" target="_blank">Basic Digital skill</a></li>
+                            <li> <a href="https://digitalskillsnigeria.gov.ng/signup/" target="_blank">Coding and Robotics</a> </li>
+                            <li><a href="https://www.shecodesfoundation.org/nigeria" target="_blank">Web Development</a></li>
+                            <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=2wYhaHuaNUu5oIhHM4XWz8iOKTI-VPdBrttVOLENCb9UMUIyNEtHOUNUTUZUWVBKS1VHTk9US1BITi4u" target="_blank">Data Science and Analytics</a></li>
+                            <li> <a href="https://slum2school.org/our-work/" target="_blank">Coding Workshop</a> </li>
+                            <li> <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=2wYhaHuaNUu5oIhHM4XWz8iOKTI-VPdBrttVOLENCb9UMUIyNEtHOUNUTUZUWVBKS1VHTk9US1BITi4u" target="_blank">UI/UX</a></li>
                         </ol>
                     </p>
                 </div>
-                <div class="carousel-image-slide" >
-                    <div class="corousel-container" id="carousel">
-                        <div class="item main">
-                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/689/original/slide1.jpg?1673048435" alt="happy-child">
-                            
-                        </div>
-
+                <div class="our-doings-img">
+                    <div class="item">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/689/original/slide1.jpg?1673048435" alt="happy-child">
                     </div>
-                </div>
-                
+                </div> 
             </div>
         </section>
 
-        <section class="support-session">
+        <section class="image-gallery-session">
             <h2 id="gallery">Image Gallery</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <div class="grid-item1">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/690/original/slide2.jpg?1673048458" alt="">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/690/original/slide2.jpg?1673048458" alt="happy-child">
                     </div>
-                    <!-- <p>Web Development Training by </p> <br>
-                    <a href="#">SheCode</a>  -->
                 </div>
                 <div class="grid-item">
                     <div  class="grid-item1">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/691/original/slide3.jpg?1673048476" alt="">
-                        <!-- <p>Web Development Training by </p> <br>
-                        <a href="#">SheCode</a> -->
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/691/original/slide3.jpg?1673048476" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="grid-item1">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/393/original/slide9.jpg?1673484778" alt="">
-                        <!-- <p>Web Development Training by </p> <br>
-                        <a href="#">SheCode</a> -->
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/393/original/slide9.jpg?1673484778" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div  class="grid-item1">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/394/original/slide8.jpg?1673484957" alt="">
-                        <!-- <p>Web Development Training by </p> <br>
-                        <a href="#">SheCode</a> -->
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/394/original/slide8.jpg?1673484957" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div  class="grid-item1">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/612/original/nav-img2.jpg?1672962049" alt="">
-                        <!-- <p>Web Development Training by </p> <br>
-                        <a href="#">SheCode</a> -->
+                        <img src="
+                        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/610/original/nav-img3.jpg?1672961945" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="grid-item1">
                         <img src="
-                        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/692/original/slide4.jpg?1673048497" alt="">
-                        <!-- <p>Web Development Training by </p> <br>
-                        <a href="#">SheCode</a> -->
+                        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/692/original/slide4.jpg?1673048497" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div  class="grid-item1">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/687/original/abt-img.jpg?1673048313" alt="">
-                        <!-- <p>Web Development Training by </p> <br>
-                        <a href="#">SheCode</a> -->
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/687/original/abt-img.jpg?1673048313" alt="happy-child">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="grid-item1">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/732/original/slide7.jpg?1673641351" alt="">
-                        <!-- <p>Web Development Training by </p> <br>
-                        <a href="#">SheCode</a> -->
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/732/original/slide7.jpg?1673641351" alt="happy-child">
                     </div>
                 </div>
 
